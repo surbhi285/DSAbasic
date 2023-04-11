@@ -167,6 +167,19 @@ public class CreatingOwnLInkedList {
         }
         System.out.println();
     }
+    public void push(int data)
+    {
+        Node newNode=new Node(data);
+        addFirst(data);
 
-
+    }
+    public int pop()
+    {
+       int remove_value=removeFirst();
+       return remove_value;
+    }
+    public int peek()
+    {
+        return getFirst();
+    }
 }
