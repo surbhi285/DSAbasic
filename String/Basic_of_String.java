@@ -9,18 +9,14 @@ public class Basic_of_String {
         String str2 = "d";
         String str3 = "madam";
         String str4 = "My.name.is.akshay";
-           System.out.println(check_anagram(str1, str2));
+          // System.out.println(check_anagram(str1, str2));
         //   System.out.println(reverse_String(str1));
         //   System.out.println(palindrome_String(str2));
         //   System.out.println(is_palindrome(str1));
         //   System.out.println(odd_char(str1));
          System.out.println(last_word_String(str4));
     }
-    public static String last_word_String(String str)
-    {
-        String[] arr=str.split("\\.");
-        return arr[arr.length-1];
-    }
+
     public static void reverse_string(){
         String s[] = "i.like.this.program.very.much".split(".");
             String ans = "";
@@ -124,5 +120,10 @@ public class Basic_of_String {
         }return sb.toString();
     }
     //print last word of string   {My name is akshay} output akshay
+    public static String last_word_String(String str)
+    {
+        String[] arr=str.split("\\.");
+        return arr[arr.length-1];
+    }
 
 }
