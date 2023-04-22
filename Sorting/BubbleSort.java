@@ -6,12 +6,9 @@ public class BubbleSort {
     public static void main(String[]args)
     {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int []arr=new int[n];
-        for(int i=0;i<n;i++)
-        {
-            arr[i]=sc.nextInt();
-        }
+        int n=6;
+        int []arr={1,2,4,7,9,0};
+
         bubble_Sort(arr,n);
         for(int i=0;i<n;i++)
         {
@@ -33,4 +30,5 @@ public class BubbleSort {
             }
         }
     }
+
 }
