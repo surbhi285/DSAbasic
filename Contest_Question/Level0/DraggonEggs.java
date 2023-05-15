@@ -1,4 +1,4 @@
-package Contest_Question;
+package Contest_Question.Level0;
 /*
 Daemon has 2 dragon eggs, one is made of A grams of Gold and the other is made of B grams of Silver.
 
@@ -12,7 +12,7 @@ Otherwise, print "Silver" (without quotes).
 import java.util.Scanner;
 
 public class DraggonEggs {
-    public static void main(String[]args)
+   /* public static void main(String[]args)
     {
         Scanner sc=new Scanner(System.in);
         int a_Gram_Of_Gold=sc.nextInt();
@@ -26,6 +26,21 @@ public class DraggonEggs {
             System.out.print("Silver");
         }
 
+    }*/
+    //Given an integer N and M check if N candies can be divided in M people
+    // such that each person get equal number of candies.
+   public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+
+        if(n%m==0)
+        {
+            System.out.print("Yes");
+        }else {
+            System.out.print("No");
+        }
     }
 
 }
